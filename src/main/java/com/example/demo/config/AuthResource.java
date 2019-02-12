@@ -54,7 +54,7 @@ public class AuthResource extends ResourceServerConfigurerAdapter {
      */
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.requestMatchers().antMatchers("/api/**").and()
+        http.requestMatchers().antMatchers("/**").and()
 //                http.
                 .authorizeRequests()
                 .antMatchers("/api/haiwan","/api/haiwanjson").permitAll()
